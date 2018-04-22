@@ -107,8 +107,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
         // The following line initializes the HttpGet Object with the URL in order to send a request
         HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY
                 + "&from=" + mainListOfCurrenciesFrom.getValue()
-                + "&to=" + mainListOfCurrenciesTo.getValue()
-                + "&amount=" + result1);
+                + "&to=" + mainListOfCurrenciesTo.getValue());
 
         try {
             CloseableHttpResponse response =  httpClient.execute(get);
