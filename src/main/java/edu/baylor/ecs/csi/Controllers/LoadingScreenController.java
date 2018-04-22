@@ -12,24 +12,24 @@ import javafx.scene.control.Hyperlink;
 // Controller for loading screen
 public class LoadingScreenController extends MainWindow {
 
-    // Creates annoatations for FXML items
+    // Creates annotations for FXML items
     @FXML
     private Button acceptButton;
 
     @FXML
     private Hyperlink credits;
 
-    // Loading screen event -> Convert screen event
-    public void loadingScreen(ActionEvent event) throws IOException{
-        this.connectToConvert();
+    // Loading screen event
+    public void loadingScreenAction(ActionEvent event) throws IOException{
+        this.connectToMenu();
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
         getWindow().setScene(getCurr());
         getWindow().show();
-        System.out.println("Successfully hit 'accept' button going to convert screen");
+        System.out.println("Successfully hit 'accept' button");
     }
 
     // Credits button
-    public void forgotAction(ActionEvent event){
+    public void creditsAction(ActionEvent event){
         System.out.println("Created by Michael Ibanez using javaFX");
     }
 }

@@ -46,18 +46,28 @@ public class MainWindow {
         curr.getStylesheets().add("/loadingScreen.css");
     }
 
+    // Changes to menu
+    protected void connectToMenu() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/menuScreen.fxml"));
+        curr = new Scene(root);
+        curr.getStylesheets().add("/menuScreen.css");
+    }
+
+
+
+
+    // Changes on converting screen
+    protected void connectToConvert() throws IOException{
+        root = FXMLLoader.load(getClass().getResource("/convertScreen.fxml"));
+        curr = new Scene(root);
+        curr.getStylesheets().add("/convertScreen.css");
+    }
+
     // Changes to settings
     protected void connectToSetting() throws IOException {
         root = FXMLLoader.load(getClass().getResource("/settingScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/settingScreen.css");
-    }
-
-    // Changes on converting screen
-    protected void connectToConvert() throws IOException{
-        root = FXMLLoader.load(getClass().getResource("/homeScreen.fxml"));
-        curr = new Scene(root);
-        curr.getStylesheets().add("/homeScreen.css");
     }
 
 
@@ -80,4 +90,10 @@ public class MainWindow {
     public void setWindow(Stage window) {
         this.window = window;
     }
+
+    // Gets current Main Window
+    public MainWindow getCurrentWindow(){
+        return this;
+    }
+
 }
