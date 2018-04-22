@@ -1,20 +1,12 @@
-package edu.baylor.ecs;
+package edu.baylor.ecs.csi;
 
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.scene.Parent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.media.Media;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 
 public class OpenMain extends Application {
 
-
-    private MasterWindow master;
+    private MainWindow master;
 
     public static void main(String[] args) {
         launch(args);
@@ -23,33 +15,21 @@ public class OpenMain extends Application {
     @Override
     public void start(Stage window) throws Exception {
 
-        Media sound = new Media(this.getClass().getResource("/Wolves.m4a").toString());
-        MediaPlayer mediaPlayers = new MediaPlayer(sound);
-        //mediaPlayers.play();
-        //AudioClip note = new AudioClip(this.getClass().getResource("/Wolves.mp3").toString());
-        //note.play(100);
-        //System.out.println(note.isPlaying());
-        //MasterWindow master = new MasterWindow(root, window,  loginScene);
-
-
-
-        master = new MasterWindow(window);
-        master.connectToLogin();
-        master.getWindow().setScene(master.getCurrentScene());
+        // Goes to main application
+        master = new MainWindow(window);
+        master.connectToLoading();
+        master.getWindow().setScene(master.getCurr());
         master.getWindow().show();
 
-        //exit request
+        // Invokes exit method using lambda
         master.getWindow().setOnCloseRequest(e -> {
-            //override the close request
             e.consume();
-            master.closeProgram(master.getWindow());
-            //mediaPlayer.stop();
-            //closeProgram();
+            master.closeProgram(MainWindow.getWindow());
         });
     }
 
     public void closeProgram() {
-        boolean result = ExitBox.display("Alert Window", "Do you really want to leave?");
+        boolean result = ExitMain.display("Alert Window", "Do you really want to leave?");
         if (result) {
             System.out.println("Saving files...");
             master.getWindow().close();
