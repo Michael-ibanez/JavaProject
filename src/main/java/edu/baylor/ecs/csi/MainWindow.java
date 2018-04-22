@@ -41,9 +41,9 @@ public class MainWindow {
 
     // Changes on main loading screen
     protected void connectToLoading() throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/loginScreen.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/loadingScreen.fxml"));
         curr = new Scene(root);
-        curr.getStylesheets().add("/login.css");
+        curr.getStylesheets().add("/loadingScreen.css");
     }
 
     // Changes to settings
@@ -54,7 +54,7 @@ public class MainWindow {
     }
 
     // Changes on converting screen
-    protected void connectToHome() throws IOException{
+    protected void connectToConvert() throws IOException{
         root = FXMLLoader.load(getClass().getResource("/homeScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/homeScreen.css");
@@ -80,10 +80,4 @@ public class MainWindow {
     public void setWindow(Stage window) {
         this.window = window;
     }
-
-    // Gets current Main Window
-    public MainWindow getMaster(){
-        return this;
-    }
-
 }

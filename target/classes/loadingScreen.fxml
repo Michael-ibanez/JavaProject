@@ -23,12 +23,9 @@
                   <Insets top="60.0" />
                </VBox.margin>
             </Text>
-            <Button id="acceptButton"  alignment="CENTER" mnemonicParsing="false" prefWidth="125.0" text="Yes">
-               <padding>
-                  <Insets bottom="100.0" left="100.0" right="10.0" top="10.0" />
-               </padding>
+            <Button id="acceptButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="125.0" text="Yes">
                <VBox.margin>
-                  <Insets left="25.0" top="60.0" />
+                  <Insets left="30.0" right="30.0" top="60.0" />
                </VBox.margin>
             </Button>
             <Hyperlink id="credits" fx:id="credits" alignment="CENTER" contentDisplay="CENTER" minWidth="110.0" onAction="#forgotAction" text="Credits" textAlignment="CENTER" translateX="35.0">

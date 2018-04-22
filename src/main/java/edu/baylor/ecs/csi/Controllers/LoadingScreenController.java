@@ -19,13 +19,13 @@ public class LoadingScreenController extends MainWindow {
     @FXML
     private Hyperlink credits;
 
-    // Loading screen event
+    // Loading screen event -> Convert screen event
     public void loadingScreen(ActionEvent event) throws IOException{
-        this.connectToHome();
+        this.connectToConvert();
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
         getWindow().setScene(getCurr());
         getWindow().show();
-        System.out.println("Successfully hit 'accept' button");
+        System.out.println("Successfully hit 'accept' button going to convert screen");
     }
 
     // Credits button
