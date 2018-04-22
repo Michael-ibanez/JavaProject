@@ -23,8 +23,6 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -84,7 +82,6 @@ public class ConvertScreenController extends MainWindow implements Initializable
 
     // If convert button is pressed
     public void convertAction(ActionEvent event) throws IOException {
-        System.out.println("Headed to convert");
         sendLiveRequest();
         httpClient.close();
         new BufferedReader(new InputStreamReader(System.in)).readLine();
