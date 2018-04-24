@@ -17,25 +17,30 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javafx.scene.control.Hyperlink;
+import javafx.scene.control.TextField;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 
 public class ConvertScreenController extends MainWindow implements Initializable{
 
     // essential URL structure is built using constants
-    public static final String ACCESS_KEY = "a7e0d4369125dbcf6bd70ec3b52a6420";
-    public static final String BASE_URL = "http://apilayer.net/api/";
-    public static final String ENDPOINT = "convert";
+    private static final String ACCESS_KEY = "a7e0d4369125dbcf6bd70ec3b52a6420";
+    private static final String BASE_URL = "http://apilayer.net/api/";
+    private static final String ENDPOINT = "live";
 
     // this object is used for executing requests to the (REST) API
-    static CloseableHttpClient httpClient = HttpClients.createDefault();
+    CloseableHttpClient httpClient = null;
 
     private ObservableList<String> listOfCurrencies = FXCollections.
             observableArrayList("AED", "AFN", "ALL", "AMD","ANG","AOA","AED",
@@ -57,15 +62,21 @@ public class ConvertScreenController extends MainWindow implements Initializable
 
 
     @FXML
-    private static ComboBox<String> mainListOfCurrenciesFrom;
+    private ComboBox<String> mainListOfCurrenciesFrom;
     @FXML
-    private static ComboBox<String> mainListOfCurrenciesTo;
+    private ComboBox<String> mainListOfCurrenciesTo;
     @FXML
     private Button convertButton;
     @FXML
     private Button exitButton;
     @FXML
-    private double result1;
+    private TextField from;
+    @FXML
+    private TextField to;
+    @FXML
+    private TextField resultField;
+    @FXML
+    private Hyperlink credits;
 
     // Initialization of window
     @Override
@@ -82,9 +93,11 @@ public class ConvertScreenController extends MainWindow implements Initializable
 
     // If convert button is pressed
     public void convertAction(ActionEvent event) throws IOException {
+        System.out.println("Headed to convert");
+        httpClient = HttpClients.createDefault();
         sendLiveRequest();
         httpClient.close();
-        new BufferedReader(new InputStreamReader(System.in)).readLine();
+        //new BufferedReader(new InputStreamReader(System.in)).readLine();
     }
 
 
@@ -102,9 +115,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
     public void sendLiveRequest(){
 
         // The following line initializes the HttpGet Object with the URL in order to send a request
-        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY
-                + "&from=" + mainListOfCurrenciesFrom.getValue()
-                + "&to=" + mainListOfCurrenciesTo.getValue());
+        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
 
         try {
             CloseableHttpResponse response =  httpClient.execute(get);
@@ -119,8 +130,17 @@ public class ConvertScreenController extends MainWindow implements Initializable
             Date timeStampDate = new Date((long)(exchangeRates.getLong("timestamp")*1000));
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss a");
             String formattedDate = dateFormat.format(timeStampDate);
-            System.out.println("1 " + exchangeRates.getString("source") + " in GBP : " + exchangeRates.getJSONObject("quotes").getDouble("USDGBP") + " (Date: " + formattedDate + ")");
-            System.out.println("\n");
+            System.out.println("Then " + from.getText() + " is : " + Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").
+                    getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue()));
+
+            to.setText("1 in " + mainListOfCurrenciesFrom.getValue() + " is : " + String.valueOf(exchangeRates.getJSONObject("quotes").
+                    getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue())));
+
+            resultField.setText(String.valueOf(Double.valueOf(from.getText())) + " " + exchangeRates.getString("source") + " in "+ mainListOfCurrenciesTo.getValue() + " : " + Double.toString(Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").
+                    getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue())) + " (Date: " + formattedDate + ")");
+
+
+
             response.close();
         } catch (ClientProtocolException e) {
             // TODO Auto-generated catch block
@@ -136,5 +156,6 @@ public class ConvertScreenController extends MainWindow implements Initializable
             e.printStackTrace();
         }
     }
+
 
 }

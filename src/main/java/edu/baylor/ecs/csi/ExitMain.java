@@ -9,7 +9,7 @@ import javafx.geometry.*;
 
 public class ExitMain {
 
-    private static boolean answer;
+    private static boolean response;
 
     public static boolean display (String title, String message){
         Stage alertWindow = new Stage();
@@ -26,11 +26,11 @@ public class ExitMain {
         Button noButton = new Button("No");
 
         yesButton.setOnAction(e -> {
-            answer = true;
+            response = true;
             alertWindow.close();
         });
         noButton.setOnAction(e -> {
-            answer = false;
+            response = false;
             alertWindow.close();
         });
 
@@ -42,6 +42,6 @@ public class ExitMain {
         alertWindow.setScene(scene);
         alertWindow.showAndWait();
 
-        return answer;
+        return response;
     }
 }

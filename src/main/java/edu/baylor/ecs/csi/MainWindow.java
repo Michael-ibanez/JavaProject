@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class MainWindow {
     private static Stage window;
-    private static Parent root;
-    private static Scene curr;
+    private Parent root;
+    private Scene curr;
 
     // Creates instance of MainWindow with no args
     public MainWindow(){
@@ -30,15 +30,6 @@ public class MainWindow {
 
     }
 
-    // What happens when we close application
-    public void closeProgram(Stage window) {
-        boolean flag = ExitMain.display("Alert Window", "No more conversions??");
-        if (!flag) {
-            System.out.println("Thanks !");
-            window.close();
-        }
-    }
-
     // Changes on main loading screen
     protected void connectToLoading() throws IOException {
         root = FXMLLoader.load(getClass().getResource("/loadingScreen.fxml"));
@@ -53,15 +44,15 @@ public class MainWindow {
         curr.getStylesheets().add("/menuScreen.css");
     }
 
-
-
-
     // Changes on converting screen
     protected void connectToConvert() throws IOException{
         root = FXMLLoader.load(getClass().getResource("/convertScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/convertScreen.css");
     }
+
+
+
 
     // Changes to settings
     protected void connectToSetting() throws IOException {
@@ -70,9 +61,17 @@ public class MainWindow {
         curr.getStylesheets().add("/settingScreen.css");
     }
 
+    // What happens when we close application
+    public void closeProgram(Stage window) {
+        boolean flag = ExitMain.display("Alert Window", "No more conversions??");
+        if (!flag) {
+            System.out.println("Thanks !");
+            window.close();
+        }
+    }
 
     // Gets current scene
-    public static Scene getCurr() {
+    public Scene getCurr() {
         return curr;
     }
 

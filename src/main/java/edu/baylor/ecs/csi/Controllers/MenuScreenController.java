@@ -53,6 +53,7 @@ public class MenuScreenController extends MainWindow implements Initializable {
 
     // Close button
     public void closeProgram(ActionEvent event){
+        System.out.println("Headed to close program");
         super.closeProgram(getWindow());
     }
 }

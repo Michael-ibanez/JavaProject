@@ -16,6 +16,13 @@
                     <target>3.5.2</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>3.1.1</version>
+            </plugin>
+
         </plugins>
     </build>
     <dependencies>

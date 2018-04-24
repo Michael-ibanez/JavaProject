@@ -9,7 +9,7 @@ public class OpenMain extends Application {
 
     // Main program ran
     public static void main(String[] args) {
-        launch(args);
+        Application.launch(args);
     }
 
     // What main really calls
@@ -23,9 +23,7 @@ public class OpenMain extends Application {
         mainWindow.getWindow().show();
 
         // Invokes exit method using lambda
-        mainWindow.getWindow().setOnCloseRequest(e -> {
-            e.consume();
-            mainWindow.closeProgram(MainWindow.getWindow());
-        });
+        // found from tutorial website
+        mainWindow.getWindow().setOnCloseRequest(e -> mainWindow.closeProgram(MainWindow.getWindow()));
     }
 }
