@@ -48,7 +48,7 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="className" layoutX="225.0" layoutY="72.0" promptText="Insert value of property" text="Insert class name" GridPane.columnIndex="1" />
+                  <TextField fx:id="className" layoutX="225.0" layoutY="72.0" promptText="Insert class name" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <Separator opacity="0.7" prefHeight="0.0" prefWidth="335.0" />
