@@ -8,12 +8,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import java.io.IOException;
-
 import static org.junit.Assert.assertTrue;
 
 public class testCurrencyConverter {
@@ -22,14 +17,12 @@ public class testCurrencyConverter {
     private static final String BASE_URL = "http://apilayer.net/api/";
     private static final String ENDPOINT = "live";
 
-    // this object is used for executing requests to the (REST) API
-    private CloseableHttpClient httpClient = null;
-
 
     @Test
     public void testSomething() throws IOException {
 
-        httpClient = HttpClients.createDefault();
+        // this object is used for executing requests to the (REST) API
+        CloseableHttpClient httpClient = HttpClients.createDefault();
 
         System.out.println("Headed to convert");
         // The following line initializes the HttpGet Object with the URL in order to send a request
@@ -47,10 +40,8 @@ public class testCurrencyConverter {
 
             response.close();
         } catch (JSONException | ParseException | IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
         httpClient.close();
 
     }

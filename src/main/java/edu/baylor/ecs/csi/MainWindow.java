@@ -38,14 +38,14 @@ public class MainWindow {
     }
 
     // Changes to menu
-    protected void connectToMenu() throws IOException {
+    public void connectToMenu() throws IOException {
         root = FXMLLoader.load(getClass().getResource("/menuScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/menuScreen.css");
     }
 
     // Changes on converting screen
-    protected void connectToConvert() throws IOException{
+    public void connectToConvert() throws IOException{
         root = FXMLLoader.load(getClass().getResource("/convertScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/convertScreen.css");
@@ -55,7 +55,7 @@ public class MainWindow {
 
 
     // Changes to settings
-    protected void connectToSetting() throws IOException {
+    public void connectToSetting() throws IOException {
         root = FXMLLoader.load(getClass().getResource("/settingScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/settingScreen.css");
@@ -63,6 +63,7 @@ public class MainWindow {
 
     // What happens when we close application
     public void closeProgram(Stage window) {
+
         boolean flag = ExitMain.display("Alert Window", "No more conversions??");
         if (!flag) {
             System.out.println("Thanks !");

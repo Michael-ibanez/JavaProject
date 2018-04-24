@@ -17,7 +17,9 @@ class ExitMain {
         //block user interaction until this is taken care of
         alertWindow.initModality(Modality.APPLICATION_MODAL);
         alertWindow.setTitle(title);
-        alertWindow.setMinWidth(250);
+        alertWindow.setMinWidth(300);
+        alertWindow.setMinHeight(300);
+
 
         Label label = new Label(message);
 
@@ -39,6 +41,7 @@ class ExitMain {
         layout.setAlignment(Pos.CENTER);
 
         Scene scene = new Scene(layout);
+        scene.getStylesheets().add("/menuScreen.css");
         alertWindow.setScene(scene);
         alertWindow.showAndWait();
 
