@@ -4,21 +4,15 @@ import edu.baylor.ecs.csi.*;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-
-import java.awt.*;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -39,19 +33,14 @@ public class SettingsScreenController extends MainWindow implements Initializabl
     @FXML
     private TextField resultField;
     @FXML
-    private Hyperlink credits;
+    private static Slider brightnessSlider;
 
     // Initialization of window
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         getWindow().setWidth(475);
         getWindow().setHeight(600);
-    }
 
-
-    // Credits button
-    public void creditsAction(ActionEvent event){
-        System.out.println("Created by Michael Ibanez using javaFX");
     }
 
     // Credits button
@@ -64,19 +53,18 @@ public class SettingsScreenController extends MainWindow implements Initializabl
         System.out.println("Created by Michael Ibanez using javaFX");
     }
 
-    private void initBrightnessControl(Stage primaryStage) {
+    public static void initBrightnessControl(Stage primaryStage,IntegerProperty brightness) {
 
         Label label = new Label();
         label.textProperty().bind(Bindings.format("Brightness: %1$2d %%", brightness));
-
-        Slider slider = new Slider();
-        slider.setMin(0);
-        slider.setMax(100);
-        slider.valueProperty().bindBidirectional(brightness);
+        brightnessSlider = new Slider();
+        brightnessSlider.setMin(0);
+        brightnessSlider.setMax(100);
+        brightnessSlider.valueProperty().bindBidirectional(brightness);
 
         VBox root = new VBox();
         root.setSpacing(10);
-        root.getChildren().addAll(label, slider);
+        root.getChildren().addAll(label, brightnessSlider);
 
         Stage stage = new Stage();
         stage.setScene(new Scene(root));

@@ -1,5 +1,11 @@
 package edu.baylor.ecs.csi;
 
+import edu.baylor.ecs.csi.Controllers.SettingsScreenController;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.DoubleBinding;
+import javafx.beans.binding.StringExpression;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
@@ -59,6 +65,16 @@ public class MainWindow {
         root = FXMLLoader.load(getClass().getResource("/settingScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/settingScreen.css");
+        IntegerProperty brightness = new SimpleIntegerProperty();
+
+        final DoubleBinding colorValue = brightness.multiply(2.55);
+
+        StringExpression styleString = Bindings.format("-fx-base:rgb(%1$.0f , %1$.0f, %1$.0f)", colorValue);
+
+        brightness.set(20);
+
+        root.styleProperty().bind(styleString);
+        SettingsScreenController.initBrightnessControl(window, brightness);
     }
 
     // What happens when we close application
