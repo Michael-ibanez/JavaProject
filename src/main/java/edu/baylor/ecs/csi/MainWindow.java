@@ -12,7 +12,7 @@ public class MainWindow {
     private Scene curr;
 
     // Creates instance of MainWindow with no args
-    public MainWindow(){
+    protected MainWindow(){
 
     }
 
@@ -31,7 +31,7 @@ public class MainWindow {
     }
 
     // Changes on main loading screen
-    protected void connectToLoading() throws IOException {
+    void connectToLoading() throws IOException {
         root = FXMLLoader.load(getClass().getResource("/loadingScreen.fxml"));
         curr = new Scene(root);
         curr.getStylesheets().add("/loadingScreen.css");
@@ -86,8 +86,8 @@ public class MainWindow {
     }
 
     // Sets current window
-    public void setWindow(Stage window) {
-        this.window = window;
+    protected void setWindow(Stage window) {
+        MainWindow.window = window;
     }
 
     // Gets current Main Window

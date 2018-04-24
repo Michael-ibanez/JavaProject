@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 import javafx.geometry.*;
 
 
-public class ExitMain {
+class ExitMain {
 
     private static boolean response;
 

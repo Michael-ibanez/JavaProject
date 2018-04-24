@@ -40,9 +40,9 @@ public class ConvertScreenController extends MainWindow implements Initializable
     private static final String ENDPOINT = "live";
 
     // this object is used for executing requests to the (REST) API
-    CloseableHttpClient httpClient = null;
+    private CloseableHttpClient httpClient = null;
 
-    private ObservableList<String> listOfCurrencies = FXCollections.
+    private final ObservableList<String> listOfCurrencies = FXCollections.
             observableArrayList("AED", "AFN", "ALL", "AMD","ANG","AOA","AED",
             "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN","BHD","BIF","BMD",
             "BND", "BOB","BRL","BSD","BTC","BTN","BWP","BYN", "BYR", "BZD", "CAD",
@@ -112,7 +112,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
         super.closeProgram(getWindow());
     }
 
-    public void sendLiveRequest(){
+    private void sendLiveRequest(){
 
         // The following line initializes the HttpGet Object with the URL in order to send a request
         HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
@@ -142,16 +142,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
 
 
             response.close();
-        } catch (ClientProtocolException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (JSONException e) {
+        } catch (JSONException | ParseException | IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

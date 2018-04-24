@@ -19,11 +19,11 @@ public class OpenMain extends Application {
         // Goes to main application
         mainWindow = new MainWindow(window);
         mainWindow.connectToLoading();
-        mainWindow.getWindow().setScene(mainWindow.getCurr());
-        mainWindow.getWindow().show();
+        MainWindow.getWindow().setScene(mainWindow.getCurr());
+        MainWindow.getWindow().show();
 
         // Invokes exit method using lambda
         // found from tutorial website
-        mainWindow.getWindow().setOnCloseRequest(e -> mainWindow.closeProgram(MainWindow.getWindow()));
+        MainWindow.getWindow().setOnCloseRequest(e -> mainWindow.closeProgram(MainWindow.getWindow()));
     }
 }
