@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.event.ActionEvent;
@@ -17,6 +18,7 @@ import java.util.Date;
 
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -64,7 +66,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
     @FXML
     private Button convertButton;
     @FXML
-    private Button exitButton;
+    private Button backButton;
     @FXML
     private TextField from;
     @FXML
@@ -102,10 +104,12 @@ public class ConvertScreenController extends MainWindow implements Initializable
         System.out.println("Created by Michael Ibanez using javaFX");
     }
 
-    // Close button
-    public void closeProgram(ActionEvent event){
-        System.out.println("Headed to close program");
-        super.closeProgram(getWindow());
+    // Back button
+    public void back(ActionEvent event) throws IOException {
+        this.connectToMenu();
+        setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
+        getWindow().setScene(getCurr());
+        getWindow().show();
     }
 
     public void sendLiveRequest(){
@@ -135,11 +139,8 @@ public class ConvertScreenController extends MainWindow implements Initializable
             resultField.setText(String.valueOf(Double.valueOf(from.getText())) + " " + exchangeRates.getString("source") + " in "+ mainListOfCurrenciesTo.getValue() + " : " + Double.toString(Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").
                     getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue())) + " (Date: " + formattedDate + ")");
 
-
-
             response.close();
         } catch (JSONException | ParseException | IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

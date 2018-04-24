@@ -7,12 +7,14 @@ import javafx.beans.property.SimpleIntegerProperty;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
 
 import java.awt.*;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -29,7 +31,7 @@ public class SettingsScreenController extends MainWindow implements Initializabl
     private IntegerProperty brightness = new SimpleIntegerProperty();
 
     @FXML
-    private Button exitButton;
+    private Button backButton;
     @FXML
     private TextField from;
     @FXML
@@ -83,10 +85,12 @@ public class SettingsScreenController extends MainWindow implements Initializabl
         stage.show();
     }
 
-    // Close button
-    public void closeProgram(ActionEvent event){
-        System.out.println("Headed to close program");
-        super.closeProgram(getWindow());
+    // Back button
+    public void back(ActionEvent event) throws IOException {
+        this.connectToMenu();
+        setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
+        getWindow().setScene(getCurr());
+        getWindow().show();
     }
 
 }
