@@ -1,50 +1,55 @@
 package edu.baylor.ecs.csi;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
 
-
-class ExitMain {
-
-    private static boolean response;
-
-    public static boolean display (String title, String message){
-        Stage alertWindow = new Stage();
-
-        //block user interaction until this is taken care of
-        alertWindow.initModality(Modality.APPLICATION_MODAL);
-        alertWindow.setTitle(title);
-        alertWindow.setMinWidth(300);
-        alertWindow.setMinHeight(300);
+import java.io.IOException;
 
 
-        Label label = new Label(message);
+public class ExitMain {
 
-        //Create buttons
-        Button yesButton = new Button("Yes");
-        Button noButton = new Button("No");
+    private static boolean result;
 
-        yesButton.setOnAction(e -> {
-            response = true;
-            alertWindow.close();
-        });
-        noButton.setOnAction(e -> {
-            response = false;
-            alertWindow.close();
+
+    public static boolean check() throws IOException {
+        Stage popUp = new Stage();
+        Parent root;
+        Scene curr;
+
+        Button yes = new Button();
+        Button no = new Button();
+
+        yes.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                result = true;
+            }
         });
 
-        VBox layout = new VBox(10);
-        layout.getChildren().addAll(label,yesButton,noButton);
-        layout.setAlignment(Pos.CENTER);
+        no.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                result = false;
+            }
+        });
 
-        Scene scene = new Scene(layout);
-        scene.getStylesheets().add("/menuScreen.css");
-        alertWindow.setScene(scene);
-        alertWindow.showAndWait();
+        root = FXMLLoader.load(ExitMain.class.getResource("/exitScreen.fxml"));
+        curr = new Scene(root);
+        curr.getStylesheets().add("/exitScreen.css");
 
-        return response;
+        popUp.initModality(Modality.APPLICATION_MODAL);
+        popUp.setScene(curr);
+
+        popUp.showAndWait();
+
+        return result;
     }
+
 }

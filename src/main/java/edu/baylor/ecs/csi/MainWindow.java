@@ -78,9 +78,9 @@ public class MainWindow {
     }
 
     // What happens when we close application
-    public void closeProgram(Stage window) {
+    public void closeProgram(Stage window) throws IOException {
 
-        boolean flag = ExitMain.display("Alert Window", "No more conversions??");
+        boolean flag = ExitMain.check();
         if (!flag) {
             System.out.println("Thanks !");
             window.close();
@@ -90,11 +90,6 @@ public class MainWindow {
     // Gets current scene
     public Scene getCurr() {
         return curr;
-    }
-
-    // Sets current scene
-    public void setCurrentScene(Scene currentScene) {
-        this.curr = currentScene;
     }
 
     // Gets current window

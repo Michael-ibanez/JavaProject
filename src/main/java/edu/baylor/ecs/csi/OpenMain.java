@@ -1,7 +1,10 @@
 package edu.baylor.ecs.csi;
 
+import com.sun.tools.javac.Main;
 import javafx.application.Application;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class OpenMain extends Application {
 
@@ -19,11 +22,18 @@ public class OpenMain extends Application {
         // Goes to main application
         mainWindow = new MainWindow(window);
         mainWindow.connectToLoading();
-        MainWindow.getWindow().setScene(mainWindow.getCurr());
-        MainWindow.getWindow().show();
+        mainWindow.getWindow().setScene(mainWindow.getCurr());
+        mainWindow.getWindow().show();
 
         // Invokes exit method using lambda
         // found from tutorial website
-        MainWindow.getWindow().setOnCloseRequest(e -> mainWindow.closeProgram(MainWindow.getWindow()));
+        mainWindow.getWindow().setOnCloseRequest(event -> {
+            event.consume();
+            try {
+                mainWindow.closeProgram(MainWindow.getWindow());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
