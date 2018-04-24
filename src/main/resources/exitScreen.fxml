@@ -27,9 +27,9 @@
         </HBox>
     </top>
    <left>
-      <Button fx:id="yes" mnemonicParsing="false" prefHeight="32.0" prefWidth="182.0" text="Yes" BorderPane.alignment="CENTER" />
+      <Button fx:id="yes" mnemonicParsing="false" onAction="#yesAction" prefHeight="32.0" prefWidth="182.0" text="Yes" BorderPane.alignment="CENTER" />
    </left>
    <right>
-      <Button fx:id="no" mnemonicParsing="false" prefHeight="32.0" prefWidth="182.0" text="No" BorderPane.alignment="CENTER" />
+      <Button fx:id="no" mnemonicParsing="false" onAction="#noAction" prefHeight="32.0" prefWidth="182.0" text="No" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>

@@ -8,9 +8,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.scene.control.Button;
@@ -22,18 +21,16 @@ import javafx.stage.Stage;
 
 public class SettingsScreenController extends MainWindow implements Initializable{
 
-    private IntegerProperty brightness = new SimpleIntegerProperty();
-
     @FXML
     private Button backButton;
     @FXML
-    private TextField from;
+    private Button injectButton;
     @FXML
-    private TextField to;
+    private TextField className;
     @FXML
-    private TextField resultField;
+    private TextField property;
     @FXML
-    private static Slider brightnessSlider;
+    private TextField value;
 
     // Initialization of window
     @Override
@@ -53,24 +50,21 @@ public class SettingsScreenController extends MainWindow implements Initializabl
         System.out.println("Created by Michael Ibanez using javaFX");
     }
 
-    public static void initBrightnessControl(Stage primaryStage,IntegerProperty brightness) {
+    public void injectAction(ActionEvent event) throws IOException {
+        File log = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
+        write(log);
 
-        Label label = new Label();
-        label.textProperty().bind(Bindings.format("Brightness: %1$2d %%", brightness));
-        brightnessSlider = new Slider();
-        brightnessSlider.setMin(0);
-        brightnessSlider.setMax(100);
-        brightnessSlider.valueProperty().bindBidirectional(brightness);
+        log = new File("/Users/michaelibanez/JavaProject/src/main/resources/exitScreen.css");
+        write(log);
 
-        VBox root = new VBox();
-        root.setSpacing(10);
-        root.getChildren().addAll(label, brightnessSlider);
+        log = new File("/Users/michaelibanez/JavaProject/src/main/resources/loadingScreen.css");
+        write(log);
 
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.initOwner(primaryStage);
+        log = new File("/Users/michaelibanez/JavaProject/src/main/resources/menuScreen.css");
+        write(log);
 
-        stage.show();
+        log = new File("/Users/michaelibanez/JavaProject/src/main/resources/settingScreen.css");
+        write(log);
     }
 
     // Back button
@@ -79,6 +73,33 @@ public class SettingsScreenController extends MainWindow implements Initializabl
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
         getWindow().setScene(getCurr());
         getWindow().show();
+    }
+
+    public void write(File log) throws IOException {
+        if(!log.exists()){
+            System.out.println("We had to make a new file.");
+
+        }
+        else {
+
+            FileWriter fileWriter = new FileWriter(log, true);
+            if(className.getText().equals("")){
+                className.setText("root");
+            }
+            if(property.getText().equals("")){
+                property.setText("");
+            }
+            if(value.getText().equals("")){
+                value.setText("");
+            }
+
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write("\n." + className.getText() + "{\n" +
+                    "\t" + property.getText() + " : " + value.getText() + "; \n }");
+            bufferedWriter.close();
+
+            System.out.println("Done");
+        }
     }
 
 }

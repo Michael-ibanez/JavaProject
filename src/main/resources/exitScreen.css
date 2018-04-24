@@ -16,3 +16,6 @@
     -fx-text-fill: #242d35;
     -fx-font-size: 14px;
 }
+.root{
+	-fx-background-size : 1000, 1000; 
+ }

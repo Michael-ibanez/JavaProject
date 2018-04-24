@@ -6,6 +6,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static edu.baylor.ecs.csi.MainWindow.getWindow;
+
 public class OpenMain extends Application {
 
     private MainWindow mainWindow;
@@ -22,15 +24,15 @@ public class OpenMain extends Application {
         // Goes to main application
         mainWindow = new MainWindow(window);
         mainWindow.connectToLoading();
-        mainWindow.getWindow().setScene(mainWindow.getCurr());
-        mainWindow.getWindow().show();
+        getWindow().setScene(mainWindow.getCurr());
+        getWindow().show();
 
         // Invokes exit method using lambda
         // found from tutorial website
-        mainWindow.getWindow().setOnCloseRequest(event -> {
+        getWindow().setOnCloseRequest(event -> {
             event.consume();
             try {
-                mainWindow.closeProgram(MainWindow.getWindow());
+                mainWindow.closeProgram(getWindow());
             } catch (IOException e) {
                 e.printStackTrace();
             }

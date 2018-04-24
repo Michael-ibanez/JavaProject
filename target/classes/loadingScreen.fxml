@@ -23,18 +23,21 @@
                   <Insets top="60.0" />
                </VBox.margin>
             </Text>
-            <Button fx:id="acceptButton" id="acceptButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="125.0" text="Yes" onAction="#loadingScreenAction">
+            <Button id="acceptButton" fx:id="acceptButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loadingScreenAction" prefHeight="50.0" prefWidth="125.0" text="Yes">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="60.0" />
                </VBox.margin>
             </Button>
-            <Hyperlink fx:id="credits" id="credits" alignment="CENTER" contentDisplay="CENTER" minWidth="110.0" onAction="#creditsAction" text="Credits" textAlignment="CENTER" translateX="35.0">
+            <Hyperlink id="credits" fx:id="credits" alignment="CENTER" contentDisplay="CENTER" minWidth="110.0" onAction="#creditsAction" text="Credits" textAlignment="CENTER" translateX="35.0">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Hyperlink>
          </children>
          <padding>

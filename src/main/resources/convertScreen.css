@@ -1,5 +1,4 @@
 .root{
-    -fx-font-size: 13pt;
     -fx-background-image: url("bg.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: 1000, 600;
@@ -17,3 +16,6 @@
     -fx-text-fill: #242d35;
     -fx-font-size: 14px;
 }
+.root{
+	-fx-background-size : 1000, 1000; 
+ }

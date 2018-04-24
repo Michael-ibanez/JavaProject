@@ -83,7 +83,10 @@
    <bottom>
       <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Hyperlink onAction="#creditsAction" text="credits" />
+            <Hyperlink onAction="#creditsAction" text="Credits">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
          </children>
       </HBox>
    </bottom>
