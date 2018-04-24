@@ -11,8 +11,6 @@ import javafx.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,7 +19,6 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -29,7 +26,6 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 
 public class ConvertScreenController extends MainWindow implements Initializable{
@@ -127,7 +123,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
             System.out.println("Live Currency Exchange Rates");
 
             // Parsed JSON Objects are accessed according to the JSON resonse's hierarchy, output strings are built
-            Date timeStampDate = new Date((long)(exchangeRates.getLong("timestamp")*1000));
+            @SuppressWarnings("RedundantCast") Date timeStampDate = new Date((long)(exchangeRates.getLong("timestamp")*1000));
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss a");
             String formattedDate = dateFormat.format(timeStampDate);
             System.out.println("Then " + from.getText() + " is : " + Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").

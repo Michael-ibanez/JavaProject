@@ -18,6 +18,8 @@ public class MenuScreenController extends MainWindow implements Initializable {
     private Button convertButton;
     @FXML
     private Button settingButton;
+    @FXML
+    private Button exitButton;
 
     // Initialization of window
     @Override
