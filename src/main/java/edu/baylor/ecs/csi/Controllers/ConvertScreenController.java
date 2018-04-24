@@ -108,7 +108,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
         super.closeProgram(getWindow());
     }
 
-    private void sendLiveRequest(){
+    public void sendLiveRequest(){
 
         // The following line initializes the HttpGet Object with the URL in order to send a request
         HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
