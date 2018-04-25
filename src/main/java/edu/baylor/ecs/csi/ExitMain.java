@@ -40,7 +40,7 @@ public class ExitMain {
     }
 
     // If yes button is pressed
-    public void yesAction(ActionEvent event) throws IOException {
+    public void yesAction(ActionEvent event) {
         result = true;
         popUp.close();
     }

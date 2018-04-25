@@ -71,7 +71,7 @@ public class SettingsScreenController extends MainWindow implements Initializabl
     }
 
     // Writes to file name "log"
-    public void write(File log) throws IOException {
+    private void write(File log) throws IOException {
         if(!log.exists()){
             System.out.println("File not found! Error!");
         }

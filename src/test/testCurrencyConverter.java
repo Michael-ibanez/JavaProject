@@ -1,7 +1,4 @@
-import edu.baylor.ecs.csi.Controllers.SettingsScreenController;
 import edu.baylor.ecs.csi.OpenMain;
-import javafx.event.ActionEvent;
-import javafx.stage.Stage;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -84,7 +81,7 @@ public class testCurrencyConverter {
     }
 
     @Test
-    public void testSettingInjector() throws Exception {
+    public void testSettingInjector() {
 
         //User has to go to inject manually to test method
         String[] args = new String[0];

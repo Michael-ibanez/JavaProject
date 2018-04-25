@@ -14,6 +14,7 @@ import javafx.scene.control.ComboBox;
 import javafx.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -43,22 +44,26 @@ public class ConvertScreenController extends MainWindow implements Initializable
     private CloseableHttpClient httpClient = null;
 
     private final ObservableList<String> listOfCurrencies = FXCollections.
-            observableArrayList("AED", "AFN", "ALL", "AMD","ANG","AOA","AED",
-            "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN","BHD","BIF","BMD",
-            "BND", "BOB","BRL","BSD","BTC","BTN","BWP","BYN", "BYR", "BZD", "CAD",
-            "CDF", "CHF", "CLF", "CLP", "CNY", "COP", "CRC", "CUC", "CUP", "CVE", "CZK",
-            "DJF", "DKK", "DOP", "DZD", "EGP", "ERN", "ETB", "EUR", "FJD", "FKP", "GBP",
-            "GEL", "GGP", "GHS", "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK",
-            "HTG", "HUF", "IDR", "ILS", "IMP", "INR", "IQD", "IRR", "ISK", "JEP", "JMD",
-            "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KPW", "KRW", "KWD", "KYD", "KZT",
-            "LAK", "LBP", "LKR", "LRD","LSL","LTL","LVL","LYD","MAD","MDL","MGA","MKD", "MMK",
-            "MNT", "MOP", "MRO", "MUR", "MVR", "MWK", "MXN", "MYR", "MZN", "NAD", "NGN", "NIO",
-            "NOK", "NPR", "NZD", "OMR", "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG",
-            "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SDG", "SEK", "SGD",
-            "SHP", "SLL", "SOS", "SRD", "STD", "SVC", "SYP", "SZL", "THB", "TJS", "TMT",
-            "TND", "TOP", "TRY", "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS",
-            "VEF", "VND", "VUV", "WST", "XAF", "XAG", "XAU", "XCD", "XDR", "XOF", "XPF",
-            "YER", "ZAR", "ZMK", "ZMW", "ZWL");
+            observableArrayList("AED", "AFN", "ALL", "AMD","ANG",
+                    "AOA","AED", "ARS", "AUD", "AWG", "AZN", "BAM", "BBD",
+                    "BDT", "BGN","BHD","BIF","BMD", "CDF", "CHF", "CLF",
+                    "CLP", "CNY", "COP", "CRC", "CUC", "CUP", "CVE", "CZK",
+                    "DJF", "DKK", "DOP", "DZD", "EGP", "ERN", "ETB", "EUR",
+                    "FJD", "FKP", "GBP", "GEL", "GGP", "GHS", "GIP", "GMD",
+                    "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HTG", "HUF",
+                    "IDR", "ILS", "IMP", "INR", "IQD", "IRR", "ISK", "JEP",
+                    "JMD", "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KPW",
+                    "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LRD",
+                    "LSL","LTL","LVL","LYD","MAD","MDL","MGA","MKD", "MMK",
+                    "MNT", "MOP", "MRO", "MUR", "MVR", "MWK", "MXN", "MYR",
+                    "MZN", "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR",
+                    "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR",
+                    "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SDG",
+                    "SEK", "SGD", "SHP", "SLL", "SOS", "SRD", "STD", "SVC",
+                    "SYP", "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY",
+                    "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS",
+                    "VEF", "VND", "VUV", "WST", "XAF", "XAG", "XAU", "XCD",
+                    "XDR", "XOF", "XPF", "YER", "ZAR", "ZMK", "ZMW", "ZWL");
 
 
     @FXML
@@ -112,10 +117,13 @@ public class ConvertScreenController extends MainWindow implements Initializable
         getWindow().show();
     }
 
-    public void sendLiveRequest(){
+    private void sendLiveRequest(){
 
         // The following line initializes the HttpGet Object with the URL in order to send a request
         HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
+
+        // Used to round the number we want
+        DecimalFormat df = new DecimalFormat("#.####");
 
         try {
             CloseableHttpResponse response =  httpClient.execute(get);
@@ -133,11 +141,13 @@ public class ConvertScreenController extends MainWindow implements Initializable
             System.out.println("Then " + from.getText() + " is : " + Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").
                     getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue()));
 
-            to.setText("1 in " + mainListOfCurrenciesFrom.getValue() + " is : " + String.valueOf(exchangeRates.getJSONObject("quotes").
-                    getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue())));
+            to.setText("1 in " + mainListOfCurrenciesFrom.getValue() + " is : " + String.valueOf(df.format(exchangeRates.getJSONObject("quotes").
+                    getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue()))));
 
-            resultField.setText(String.valueOf(Double.valueOf(from.getText())) + " " + exchangeRates.getString("source") + " in "+ mainListOfCurrenciesTo.getValue() + " : " + Double.toString(Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").
-                    getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue())) + " (Date: " + formattedDate + ")");
+            resultField.setText(String.valueOf(Double.valueOf(from.getText())) + " " + exchangeRates.getString("source")
+                    + " in "+ mainListOfCurrenciesTo.getValue() + " : "
+                    + df.format(Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue()))
+                    + " (Date: " + formattedDate + ")");
 
             response.close();
         } catch (JSONException | ParseException | IOException e) {
