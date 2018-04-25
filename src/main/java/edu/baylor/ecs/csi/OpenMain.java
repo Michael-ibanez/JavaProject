@@ -1,12 +1,9 @@
 package edu.baylor.ecs.csi;
 
-import com.sun.tools.javac.Main;
+import static edu.baylor.ecs.csi.MainWindow.getWindow;
 import javafx.application.Application;
 import javafx.stage.Stage;
-
 import java.io.IOException;
-
-import static edu.baylor.ecs.csi.MainWindow.getWindow;
 
 public class OpenMain extends Application {
 
@@ -39,3 +36,7 @@ public class OpenMain extends Application {
         });
     }
 }
+
+// https://www.programcreek.com/java-api-examples/?class=javafx.stage.Stage&method=setOnCloseRequest
+
+// https://examples.javacodegeeks.com/desktop-java/javafx/fxml/javafx-fxml-controller-example/

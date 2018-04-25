@@ -19,7 +19,7 @@ public class testCurrencyConverter {
 
 
     @Test
-    public void testSomething() throws IOException {
+    public void testUSGBP() throws IOException {
 
         // this object is used for executing requests to the (REST) API
         CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -37,6 +37,34 @@ public class testCurrencyConverter {
 
             assertTrue(exchangeRates.getJSONObject("quotes").getDouble("USDGBP") > 0.68
                     && exchangeRates.getJSONObject("quotes").getDouble("USDGBP") < 0.8);
+
+            response.close();
+        } catch (JSONException | ParseException | IOException e) {
+            e.printStackTrace();
+        }
+        httpClient.close();
+
+    }
+
+    @Test
+    public void testUSDAFN() throws IOException {
+
+        // this object is used for executing requests to the (REST) API
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        System.out.println("Headed to convert!");
+        // The following line initializes the HttpGet Object with the URL in order to send a request
+        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
+
+        try {
+            CloseableHttpResponse response =  httpClient.execute(get);
+            HttpEntity entity = response.getEntity();
+
+            // the following line converts the JSON Response to an equivalent Java Object
+            JSONObject exchangeRates = new JSONObject(EntityUtils.toString(entity));
+
+            assertTrue(exchangeRates.getJSONObject("quotes").getDouble("USDAFN") > 69
+                    && exchangeRates.getJSONObject("quotes").getDouble("USDAFN") < 71);
 
             response.close();
         } catch (JSONException | ParseException | IOException e) {

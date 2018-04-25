@@ -24,6 +24,7 @@ public class ExitMain {
         popUp.initModality(Modality.APPLICATION_MODAL);
     }
 
+    // Main function called to bring up pop up window
     public static boolean check() throws IOException {
         Parent root;
         Scene curr;

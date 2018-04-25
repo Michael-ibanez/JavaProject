@@ -12,7 +12,7 @@ public class MainWindow {
     private Scene curr;
 
     // Creates instance of MainWindow with no args
-    protected MainWindow(){
+    public MainWindow(){
 
     }
 

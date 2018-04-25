@@ -1,21 +1,15 @@
 package edu.baylor.ecs.csi.Controllers;
 
 import edu.baylor.ecs.csi.*;
-import javafx.beans.binding.Bindings;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.event.ActionEvent;
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
@@ -42,14 +36,15 @@ public class SettingsScreenController extends MainWindow implements Initializabl
 
     // Credits button
     public void githubAction(ActionEvent event){
-        System.out.println("Created by Michael Ibanez using javaFX");
+        System.out.println("Github : https://github.com/Michael-ibanez/");
     }
 
     // Credits button
     public void linkedInAction(ActionEvent event){
-        System.out.println("Created by Michael Ibanez using javaFX");
+        System.out.println("LinkedIn : https://www.linkedin.com/in/michael-ibanez/");
     }
 
+    // Injects into css files
     public void injectAction(ActionEvent event) throws IOException {
         File log = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
         write(log);
@@ -75,10 +70,10 @@ public class SettingsScreenController extends MainWindow implements Initializabl
         getWindow().show();
     }
 
+    // Writes to file name "log"
     public void write(File log) throws IOException {
         if(!log.exists()){
             System.out.println("We had to make a new file.");
-
         }
         else {
 
