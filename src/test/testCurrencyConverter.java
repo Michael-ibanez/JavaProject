@@ -1,4 +1,5 @@
 import edu.baylor.ecs.csi.Controllers.ConvertScreenController;
+import edu.baylor.ecs.csi.OpenMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -30,7 +31,6 @@ public class testCurrencyConverter {
         // this object is used for executing requests to the (REST) API
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        System.out.println("Headed to convert");
         // The following line initializes the HttpGet Object with the URL in order to send a request
         HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
 
@@ -58,7 +58,6 @@ public class testCurrencyConverter {
         // this object is used for executing requests to the (REST) API
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        System.out.println("Headed to convert!");
         // The following line initializes the HttpGet Object with the URL in order to send a request
         HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
 
@@ -108,31 +107,31 @@ public class testCurrencyConverter {
 
     }
 
-//    @Test
-//    public void testSettingInjector() {
-//
-//        //User has to go to inject manually to test method
-//        String[] args = new String[0];
-//        OpenMain.main(args);
-//
-//        File file = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
-//        boolean result = false;
-//
-//        try {
-//            Scanner scanner = new Scanner(file);
-//            while (scanner.hasNextLine()) {
-//                String line = scanner.nextLine();
-//                if(line.contains("-fx-background-image : url(/bg.jpg);")) {
-//                    result = true;
-//                }
-//            }
-//        } catch(FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        assertTrue(result);
-//
-//    }
+    @Test
+    public void testSettingInjector() {
+
+        //User has to go to inject manually to test method
+        String[] args = new String[0];
+        OpenMain.main(args);
+
+        File file = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
+        boolean result = false;
+
+        try {
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if(line.contains("-fx-background-image : url(/bg.jpg);")) {
+                    result = true;
+                }
+            }
+        } catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        assertTrue(result);
+
+    }
 
     @Test
     public void testCreditsActionFile() {
@@ -140,7 +139,6 @@ public class testCurrencyConverter {
         File file = new File("creditsActionFile.txt");
         boolean result = false;
         ConvertScreenController a = new ConvertScreenController();
-
 
         try {
             a.creditsActionFile();

@@ -12,7 +12,6 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.event.ActionEvent;
-
 import java.io.*;
 import java.net.URL;
 import java.text.DecimalFormat;

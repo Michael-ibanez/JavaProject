@@ -83,9 +83,4 @@ public class MainWindow {
         MainWindow.window = window;
     }
 
-    // Gets current Main Window
-    public MainWindow getCurrentWindow(){
-        return this;
-    }
-
 }
