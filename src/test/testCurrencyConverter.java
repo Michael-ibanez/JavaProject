@@ -88,7 +88,7 @@ public class testCurrencyConverter {
 
         System.out.println("Headed to convert!");
         // The following line initializes the HttpGet Object with the URL in order to send a request
-        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
+        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY + "&source=GBP");
 
         try {
             CloseableHttpResponse response =  httpClient.execute(get);
@@ -97,8 +97,8 @@ public class testCurrencyConverter {
             // the following line converts the JSON Response to an equivalent Java Object
             JSONObject exchangeRates = new JSONObject(EntityUtils.toString(entity));
 
-            assertTrue(exchangeRates.getJSONObject("quotes").getDouble("GBPUSD") > 69
-                    && exchangeRates.getJSONObject("quotes").getDouble("GBPUSD") < 71);
+            assertTrue(exchangeRates.getJSONObject("quotes").getDouble("GBPUSD") > 1.3
+                    && exchangeRates.getJSONObject("quotes").getDouble("GBPUSD") < 1.4);
 
             response.close();
         } catch (JSONException | ParseException | IOException e) {
