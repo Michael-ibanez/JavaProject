@@ -51,7 +51,6 @@ public class MainWindow {
         curr.getStylesheets().add("/convertScreen.css");
     }
 
-
     // Changes to settings
     public void connectToSetting() throws IOException {
         root = FXMLLoader.load(getClass().getResource("/settingScreen.fxml"));
@@ -63,8 +62,8 @@ public class MainWindow {
     public void closeProgram(Stage window) throws IOException {
 
         boolean flag = ExitMain.check();
-        if (!flag) {
-            System.out.println("Thanks !");
+        if (flag) {
+            System.out.println("Thanks have a great day!!");
             window.close();
         }
     }

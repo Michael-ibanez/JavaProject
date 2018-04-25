@@ -25,7 +25,6 @@ public class LoadingScreenController extends MainWindow {
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
         getWindow().setScene(getCurr());
         getWindow().show();
-        System.out.println("Successfully hit 'accept' button");
     }
 
     // Credits button

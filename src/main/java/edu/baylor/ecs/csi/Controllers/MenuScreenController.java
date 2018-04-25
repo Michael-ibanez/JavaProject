@@ -30,7 +30,6 @@ public class MenuScreenController extends MainWindow implements Initializable {
 
     // If convert button is pressed
     public void convertAction(ActionEvent event) throws IOException {
-        System.out.println("Headed to convert");
 
         this.connectToConvert();
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
@@ -40,7 +39,6 @@ public class MenuScreenController extends MainWindow implements Initializable {
 
     // If setting button is pressed
     public void settingAction(ActionEvent event) throws IOException {
-        System.out.println("Headed to settings");
 
         this.connectToSetting();
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
@@ -55,7 +53,6 @@ public class MenuScreenController extends MainWindow implements Initializable {
 
     // Close button
     public void closeProgram(ActionEvent event) throws IOException {
-        System.out.println("Headed to close program");
         super.closeProgram(getWindow());
     }
 }

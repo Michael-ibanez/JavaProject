@@ -1,3 +1,7 @@
+import edu.baylor.ecs.csi.Controllers.SettingsScreenController;
+import edu.baylor.ecs.csi.OpenMain;
+import javafx.event.ActionEvent;
+import javafx.stage.Stage;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -8,7 +12,12 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
+
 import static org.junit.Assert.assertTrue;
 
 public class testCurrencyConverter {
@@ -73,4 +82,31 @@ public class testCurrencyConverter {
         httpClient.close();
 
     }
+
+    @Test
+    public void testSettingInjector() throws Exception {
+
+        //User has to go to inject manually to test method
+        String[] args = new String[0];
+        OpenMain.main(args);
+
+        File file = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
+        boolean result = false;
+
+        try {
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if(line.contains("-fx-background-image : url(/bg.jpg);")) {
+                    result = true;
+                }
+            }
+        } catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        assertTrue(result);
+
+    }
+
 }

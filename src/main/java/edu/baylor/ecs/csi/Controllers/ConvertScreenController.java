@@ -1,3 +1,6 @@
+/*
+API from CurrencyLayer
+ */
 package edu.baylor.ecs.csi.Controllers;
 
 import edu.baylor.ecs.csi.*;
@@ -15,7 +18,6 @@ import java.util.ResourceBundle;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -91,11 +93,9 @@ public class ConvertScreenController extends MainWindow implements Initializable
 
     // If convert button is pressed
     public void convertAction(ActionEvent event) throws IOException {
-        System.out.println("Headed to convert");
         httpClient = HttpClients.createDefault();
         sendLiveRequest();
         httpClient.close();
-        //new BufferedReader(new InputStreamReader(System.in)).readLine();
     }
 
 
@@ -121,7 +121,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
             CloseableHttpResponse response =  httpClient.execute(get);
             HttpEntity entity = response.getEntity();
 
-            // the following line converts the JSON Response to an equivalent Java Object
+            // The following line converts the JSON Response to an equivalent Java Object
             JSONObject exchangeRates = new JSONObject(EntityUtils.toString(entity));
 
             System.out.println("Live Currency Exchange Rates");
@@ -144,6 +144,5 @@ public class ConvertScreenController extends MainWindow implements Initializable
             e.printStackTrace();
         }
     }
-
 
 }

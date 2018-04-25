@@ -34,12 +34,12 @@ public class SettingsScreenController extends MainWindow implements Initializabl
 
     }
 
-    // Credits button
+    // Github button
     public void githubAction(ActionEvent event){
         System.out.println("Github : https://github.com/Michael-ibanez/");
     }
 
-    // Credits button
+    // LinkedIn button
     public void linkedInAction(ActionEvent event){
         System.out.println("LinkedIn : https://www.linkedin.com/in/michael-ibanez/");
     }
@@ -73,19 +73,20 @@ public class SettingsScreenController extends MainWindow implements Initializabl
     // Writes to file name "log"
     public void write(File log) throws IOException {
         if(!log.exists()){
-            System.out.println("We had to make a new file.");
+            System.out.println("File not found! Error!");
         }
         else {
 
             FileWriter fileWriter = new FileWriter(log, true);
+
             if(className.getText().equals("")){
                 className.setText("root");
             }
             if(property.getText().equals("")){
-                property.setText("");
+                property.setText("-fx-background-image");
             }
             if(value.getText().equals("")){
-                value.setText("");
+                value.setText("url(/bg.jpg)");
             }
 
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -93,7 +94,6 @@ public class SettingsScreenController extends MainWindow implements Initializabl
                     "\t" + property.getText() + " : " + value.getText() + "; \n }");
             bufferedWriter.close();
 
-            System.out.println("Done");
         }
     }
 
