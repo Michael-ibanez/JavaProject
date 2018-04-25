@@ -120,7 +120,8 @@ public class ConvertScreenController extends MainWindow implements Initializable
     private void sendLiveRequest(){
 
         // The following line initializes the HttpGet Object with the URL in order to send a request
-        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY);
+        HttpGet get = new HttpGet(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY
+                + "&source=" + mainListOfCurrenciesFrom.getValue());
 
         // Used to round the number we want
         DecimalFormat df = new DecimalFormat("#.####");
@@ -138,6 +139,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
             @SuppressWarnings("RedundantCast") Date timeStampDate = new Date((long)(exchangeRates.getLong("timestamp")*1000));
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss a");
             String formattedDate = dateFormat.format(timeStampDate);
+
             System.out.println("Then " + from.getText() + " is : " + Double.valueOf(from.getText()) * exchangeRates.getJSONObject("quotes").
                     getDouble(mainListOfCurrenciesFrom.getValue() + mainListOfCurrenciesTo.getValue()));
 

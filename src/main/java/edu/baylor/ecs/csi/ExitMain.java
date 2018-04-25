@@ -18,7 +18,7 @@ public class ExitMain {
     Button no;
 
     private static boolean result = true;
-    private static Stage popUp = new Stage();
+    private static final Stage popUp = new Stage();
 
     static {
         popUp.initModality(Modality.APPLICATION_MODAL);
@@ -46,7 +46,7 @@ public class ExitMain {
     }
 
     // If no button is pressed
-    public void noAction(ActionEvent event) throws IOException {
+    public void noAction(ActionEvent event) {
         result = false;
         popUp.close();
     }
