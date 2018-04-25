@@ -1,6 +1,4 @@
 import edu.baylor.ecs.csi.Controllers.ConvertScreenController;
-import edu.baylor.ecs.csi.MainWindow;
-import edu.baylor.ecs.csi.OpenMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -12,7 +10,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
 
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -138,7 +135,7 @@ public class testCurrencyConverter {
 //    }
 
     @Test
-    public void testCreditsActionFile() throws FileNotFoundException {
+    public void testCreditsActionFile() {
 
         File file = new File("creditsActionFile.txt");
         boolean result = false;
