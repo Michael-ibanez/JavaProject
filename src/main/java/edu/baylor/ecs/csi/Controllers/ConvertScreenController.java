@@ -12,7 +12,8 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.event.ActionEvent;
-import java.io.IOException;
+
+import java.io.*;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.ResourceBundle;
@@ -107,6 +108,26 @@ public class ConvertScreenController extends MainWindow implements Initializable
     // Credits button
     public void creditsAction(ActionEvent event){
         System.out.println("Created by Michael Ibanez using javaFX");
+    }
+
+    // Credits button writes to a new file
+    public void creditsActionFile() throws FileNotFoundException {
+        // Creating a File object that represents the disk file.
+        File newFile = new File("creditsActionFile.txt");
+        if(!newFile.exists()){
+            try {
+                PrintWriter writer = new PrintWriter("/creditsActionFile.txt", "UTF-8");
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        PrintStream o = new PrintStream(newFile);
+
+        // Assign o to output stream
+        System.setOut(o);
+        System.out.println("Created by Michael Ibanez using javaFX");
+
     }
 
     // Back button

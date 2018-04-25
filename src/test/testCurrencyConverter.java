@@ -1,3 +1,5 @@
+import edu.baylor.ecs.csi.Controllers.ConvertScreenController;
+import edu.baylor.ecs.csi.MainWindow;
 import edu.baylor.ecs.csi.OpenMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
@@ -10,6 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
 
+import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -108,28 +111,52 @@ public class testCurrencyConverter {
 
     }
 
+//    @Test
+//    public void testSettingInjector() {
+//
+//        //User has to go to inject manually to test method
+//        String[] args = new String[0];
+//        OpenMain.main(args);
+//
+//        File file = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
+//        boolean result = false;
+//
+//        try {
+//            Scanner scanner = new Scanner(file);
+//            while (scanner.hasNextLine()) {
+//                String line = scanner.nextLine();
+//                if(line.contains("-fx-background-image : url(/bg.jpg);")) {
+//                    result = true;
+//                }
+//            }
+//        } catch(FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//        assertTrue(result);
+//
+//    }
+
     @Test
-    public void testSettingInjector() {
+    public void testCreditsActionFile() throws FileNotFoundException {
 
-        //User has to go to inject manually to test method
-        String[] args = new String[0];
-        OpenMain.main(args);
-
-        File file = new File("/Users/michaelibanez/JavaProject/src/main/resources/convertScreen.css");
+        File file = new File("creditsActionFile.txt");
         boolean result = false;
+        ConvertScreenController a = new ConvertScreenController();
+
 
         try {
+            a.creditsActionFile();
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                if(line.contains("-fx-background-image : url(/bg.jpg);")) {
+                if(line.contains("Created by Michael Ibanez using javaFX")) {
                     result = true;
                 }
             }
         } catch(FileNotFoundException e) {
             e.printStackTrace();
         }
-
         assertTrue(result);
 
     }
