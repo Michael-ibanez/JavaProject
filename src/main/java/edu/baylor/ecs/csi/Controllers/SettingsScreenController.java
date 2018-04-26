@@ -77,7 +77,7 @@ public class SettingsScreenController extends MainWindow implements Initializabl
         }
         else {
 
-            FileWriter fileWriter = new FileWriter(log, true);
+            Writer fileWriter = new OutputStreamWriter(new FileOutputStream(log), "UTF-8");
 
             if(className.getText().equals("")){
                 className.setText("root");

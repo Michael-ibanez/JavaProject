@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaProject:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63e4514d-df4b-4ab4-80cf-300605897477" name="Default" comment="" />
+    <list default="true" id="63e4514d-df4b-4ab4-80cf-300605897477" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaProject_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mycompany_app_my_app_1_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testCurrencyConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testCurrencyConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/baylor/ecs/csi/Controllers/ConvertScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/baylor/ecs/csi/Controllers/ConvertScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/baylor/ecs/csi/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/baylor/ecs/csi/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCurrencyConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCurrencyConverter.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,38 +32,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OpenMain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OpenMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="420">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadingScreenController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuScreenController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="JAVA/edu.baylor.ecs.csi" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/edu.baylor.ecs.csi">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>edu.baylor.ecs.csi</OriginalElement>
+              <nodes>
+                <node x="0.0" y="430.0">edu.baylor.ecs.csi.Controllers.ConvertScreenController</node>
+                <node x="824.0" y="474.0">edu.baylor.ecs.csi.Controllers.LoadingScreenController</node>
+                <node x="310.0" y="474.0">edu.baylor.ecs.csi.OpenMain</node>
+                <node x="1154.0" y="430.0">edu.baylor.ecs.csi.Controllers.SettingsScreenController</node>
+                <node x="464.5" y="0.0">edu.baylor.ecs.csi.ExitMain</node>
+                <node x="473.0" y="145.0">edu.baylor.ecs.csi.MainWindow</node>
+                <node x="514.0" y="441.0">edu.baylor.ecs.csi.Controllers.MenuScreenController</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="edu.baylor.ecs.csi.Controllers.ConvertScreenController" target="edu.baylor.ecs.csi.MainWindow">
+                  <point x="72.5" y="-80.5" />
+                  <point x="217.5" y="380.0" />
+                  <point x="503.95454545454544" y="380.0" />
+                  <point x="-82.54545454545456" y="102.5" />
+                </edge>
+                <edge source="edu.baylor.ecs.csi.Controllers.LoadingScreenController" target="edu.baylor.ecs.csi.MainWindow">
+                  <point x="77.5" y="-36.5" />
+                  <point x="1056.5" y="390.0" />
+                  <point x="648.4090909090909" y="390.0" />
+                  <point x="61.90909090909088" y="102.5" />
+                </edge>
+                <edge source="edu.baylor.ecs.csi.Controllers.SettingsScreenController" target="edu.baylor.ecs.csi.MainWindow">
+                  <point x="-72.5" y="-80.5" />
+                  <point x="1226.5" y="380.0" />
+                  <point x="669.0454545454545" y="380.0" />
+                  <point x="82.5454545454545" y="102.5" />
+                </edge>
+                <edge source="edu.baylor.ecs.csi.MainWindow" target="edu.baylor.ecs.csi.ExitMain">
+                  <point x="0.0" y="-102.5" />
+                  <point x="0.0" y="47.5" />
+                </edge>
+                <edge source="edu.baylor.ecs.csi.Controllers.MenuScreenController" target="edu.baylor.ecs.csi.MainWindow">
+                  <point x="-72.5" y="-69.5" />
+                  <point x="0.0" y="102.5" />
+                </edge>
+                <edge source="edu.baylor.ecs.csi.OpenMain" target="edu.baylor.ecs.csi.MainWindow">
+                  <point x="-61.33333333333334" y="-36.5" />
+                  <point x="340.66666666666663" y="390.0" />
+                  <point x="524.5909090909091" y="390.0" />
+                  <point x="-61.90909090909088" y="102.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7789108369583304" x="214.12255859375" y="147.12255859375" />
+              <SelectedNodes>
+                <node>edu.baylor.ecs.csi.MainWindow</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -51,32 +110,35 @@
       <file leaf-file-name="ConvertScreenController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="101" column="22" lean-forward="true" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+            <state relative-caret-position="348">
+              <caret line="130" column="5" lean-forward="true" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
               <folding>
-                <element signature="e#0#6413#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#4124#4125#0" expanded="true" />
-                <element signature="e#4200#4201#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settingScreen.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/settingScreen.css">
+      <file leaf-file-name="testCurrencyConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/testCurrencyConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="465">
+              <caret line="139" column="28" lean-forward="true" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuScreen.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/menuScreen.css">
+      <file leaf-file-name="SettingsScreenController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="470">
+              <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,25 +159,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/convertScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/a.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/exitScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/settingScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/convertScreen.css" />
         <option value="$PROJECT_DIR$/src/main/resources/exitScreen.css" />
         <option value="$PROJECT_DIR$/src/main/resources/loadingScreen.css" />
         <option value="$PROJECT_DIR$/src/main/resources/menuScreen.css" />
         <option value="$PROJECT_DIR$/src/main/resources/settingScreen.css" />
         <option value="$PROJECT_DIR$/creditsActionFile.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java" />
         <option value="$PROJECT_DIR$/src/test/testCurrencyConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java" />
       </list>
     </option>
   </component>
@@ -131,6 +193,38 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CurrencyConverter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CurrencyConverter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CurrencyConverter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="spotbugs" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CurrencyConverter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CurrencyConverter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
@@ -205,7 +299,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -328,7 +422,11 @@
       <option name="presentableId" value="Default" />
       <updated>1524526316629</updated>
       <workItem from="1524526318289" duration="10812000" />
-      <workItem from="1524604436777" duration="12876000" />
+      <workItem from="1524604436777" duration="13210000" />
+      <workItem from="1524678511128" duration="455000" />
+      <workItem from="1524699723236" duration="376000" />
+      <workItem from="1524710449026" duration="1937000" />
+      <workItem from="1524752628255" duration="2791000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pom to include new plugins for testing">
       <created>1524531883702</created>
@@ -499,7 +597,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23688000" />
+    <option name="totallyTimeSpent" value="29581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -507,30 +605,32 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4920635" weight="0.32983193" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4908425" weight="0.32983193" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51159954" side_tool="true" visible="true" weight="0.24264705" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" sideWeight="0.4993895" weight="0.32983193" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.515873" side_tool="true" visible="true" weight="0.24264705" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" order="4" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4993895" weight="0.32983193" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4884005" visible="true" weight="0.24264705" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48412699" visible="true" weight="0.24264705" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" weight="0.1197479" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24664225" />
-      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.496337" weight="0.32983193" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1935287" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.32983193" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4981685" weight="0.39915967" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.496337" weight="0.32983193" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.32983193" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,26 +663,184 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testCurrencyConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settingScreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/menuScreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testCurrencyConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settingScreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/menuScreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -593,14 +851,10 @@
           <caret line="75" column="47" lean-forward="true" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2837#2838#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-            <element signature="e#3051#3052#0" expanded="true" />
-            <element signature="e#3080#3081#0" expanded="true" />
-            <element signature="e#3153#3154#0" expanded="true" />
-            <element signature="e#3195#3196#0" expanded="true" />
-            <element signature="e#3270#3271#0" expanded="true" />
-            <element signature="e#3297#3298#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -631,13 +885,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Tests/a.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -645,43 +892,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/exitScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convertScreen.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settingScreen.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadingScreen.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menuScreen.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/convertScreen.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/settingScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -701,11 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#2379#2380#0" expanded="true" />
-            <element signature="e#4424#4425#0" expanded="true" />
-            <element signature="e#4488#4489#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,14 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="226" column="43" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#5951#6086#0" expanded="true" />
-            <element signature="e#6085#6086#0" expanded="true" />
-            <element signature="e#6484#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,52 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/menuScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/convertScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,21 +976,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settingScreen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -840,17 +990,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/settingScreen.css">
+    <entry file="uml://MODULES/mdl-JavaProject">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-JavaProject</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">mdl-JavaProject</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-288.0" y="-80.0" />
+          <SelectedNodes>
+            <node>mdl-JavaProject</node>
+          </SelectedNodes>
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="165">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="211" column="20" selection-start-line="211" selection-start-column="20" selection-end-line="211" selection-end-column="20" />
+          <folding>
+            <element signature="e#7400#7401#0" expanded="true" />
+            <element signature="e#7482#7483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2377#2378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/edu.baylor.ecs.csi">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>edu.baylor.ecs.csi</OriginalElement>
+          <nodes>
+            <node x="0.0" y="430.0">edu.baylor.ecs.csi.Controllers.ConvertScreenController</node>
+            <node x="824.0" y="474.0">edu.baylor.ecs.csi.Controllers.LoadingScreenController</node>
+            <node x="310.0" y="474.0">edu.baylor.ecs.csi.OpenMain</node>
+            <node x="1154.0" y="430.0">edu.baylor.ecs.csi.Controllers.SettingsScreenController</node>
+            <node x="464.5" y="0.0">edu.baylor.ecs.csi.ExitMain</node>
+            <node x="473.0" y="145.0">edu.baylor.ecs.csi.MainWindow</node>
+            <node x="514.0" y="441.0">edu.baylor.ecs.csi.Controllers.MenuScreenController</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="edu.baylor.ecs.csi.Controllers.ConvertScreenController" target="edu.baylor.ecs.csi.MainWindow">
+              <point x="72.5" y="-80.5" />
+              <point x="217.5" y="380.0" />
+              <point x="503.95454545454544" y="380.0" />
+              <point x="-82.54545454545456" y="102.5" />
+            </edge>
+            <edge source="edu.baylor.ecs.csi.Controllers.LoadingScreenController" target="edu.baylor.ecs.csi.MainWindow">
+              <point x="77.5" y="-36.5" />
+              <point x="1056.5" y="390.0" />
+              <point x="648.4090909090909" y="390.0" />
+              <point x="61.90909090909088" y="102.5" />
+            </edge>
+            <edge source="edu.baylor.ecs.csi.Controllers.SettingsScreenController" target="edu.baylor.ecs.csi.MainWindow">
+              <point x="-72.5" y="-80.5" />
+              <point x="1226.5" y="380.0" />
+              <point x="669.0454545454545" y="380.0" />
+              <point x="82.5454545454545" y="102.5" />
+            </edge>
+            <edge source="edu.baylor.ecs.csi.MainWindow" target="edu.baylor.ecs.csi.ExitMain">
+              <point x="0.0" y="-102.5" />
+              <point x="0.0" y="47.5" />
+            </edge>
+            <edge source="edu.baylor.ecs.csi.Controllers.MenuScreenController" target="edu.baylor.ecs.csi.MainWindow">
+              <point x="-72.5" y="-69.5" />
+              <point x="0.0" y="102.5" />
+            </edge>
+            <edge source="edu.baylor.ecs.csi.OpenMain" target="edu.baylor.ecs.csi.MainWindow">
+              <point x="-61.33333333333334" y="-36.5" />
+              <point x="340.66666666666663" y="390.0" />
+              <point x="524.5909090909091" y="390.0" />
+              <point x="-61.90909090909088" y="102.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7789108369583304" x="214.12255859375" y="147.12255859375" />
+          <SelectedNodes>
+            <node>edu.baylor.ecs.csi.MainWindow</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testCurrencyConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="465">
+          <caret line="139" column="28" lean-forward="true" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -859,28 +1151,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="101" column="22" lean-forward="true" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+        <state relative-caret-position="348">
+          <caret line="130" column="5" lean-forward="true" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
           <folding>
-            <element signature="e#0#6413#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#4124#4125#0" expanded="true" />
-            <element signature="e#4200#4201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creditsActionFile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="470">
+          <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -891,10 +1175,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>JavaProject:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

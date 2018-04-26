@@ -14,6 +14,7 @@ import javafx.scene.control.ComboBox;
 import javafx.event.ActionEvent;
 import java.io.*;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 import java.text.DateFormat;
@@ -110,7 +111,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
     }
 
     // Credits button writes to a new file
-    public void creditsActionFile() throws FileNotFoundException {
+    public void creditsActionFile() throws IOException {
         // Creating a File object that represents the disk file.
         File newFile = new File("creditsActionFile.txt");
         if(!newFile.exists()){
@@ -121,7 +122,7 @@ public class ConvertScreenController extends MainWindow implements Initializable
                 e.printStackTrace();
             }
         }
-        PrintStream o = new PrintStream(newFile);
+        PrintStream o = new PrintStream(newFile,"UTF-8");
 
         // Assign o to output stream
         System.setOut(o);

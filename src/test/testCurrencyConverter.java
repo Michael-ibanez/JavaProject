@@ -134,7 +134,7 @@ public class testCurrencyConverter {
     }
 
     @Test
-    public void testCreditsActionFile() {
+    public void testCreditsActionFile() throws IOException {
 
         File file = new File("creditsActionFile.txt");
         boolean result = false;
