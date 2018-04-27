@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63e4514d-df4b-4ab4-80cf-300605897477" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,10 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MenuScreenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OpenMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
+            <state relative-caret-position="239">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -33,11 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsScreenController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoadingScreenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsScreenController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="134" column="14" lean-forward="true" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+            <state relative-caret-position="44">
+              <caret line="121" column="27" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -49,7 +74,7 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
+            <state relative-caret-position="-106">
               <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -59,11 +84,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvertScreenController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ExitMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-316">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConvertScreenController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="2336">
+              <caret line="218" column="17" lean-forward="true" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -107,8 +145,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/menuScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java" />
       </list>
     </option>
   </component>
@@ -152,7 +190,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
+    <option name="width" value="838" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -166,6 +204,98 @@
             <path>
               <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="csi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="csi" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="baylor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProject" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,7 +449,7 @@
       <workItem from="1524710449026" duration="1937000" />
       <workItem from="1524752628255" duration="3861000" />
       <workItem from="1524781693343" duration="1923000" />
-      <workItem from="1524783788020" duration="7831000" />
+      <workItem from="1524783788020" duration="8635000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pom to include new plugins for testing">
       <created>1524531883702</created>
@@ -475,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524802630687</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fixed last bugs">
+      <created>1524804129168</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1524804129168</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -511,7 +648,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40405000" />
+    <option name="totallyTimeSpent" value="41209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -531,7 +668,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" weight="0.1197479" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1984127" />
-      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.496337" visible="true" weight="0.14915967" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.496337" weight="0.14915967" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.32983193" />
       <window_info id="Learn" order="2" />
@@ -915,17 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/menuScreen.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -964,17 +1090,6 @@
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/edu.baylor.ecs.csi">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1001,17 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1021,19 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/OpenMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
+        <state relative-caret-position="239">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1043,8 +1136,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
+        <state relative-caret-position="-106">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/ExitMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1054,8 +1158,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/SettingsScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="134" column="14" lean-forward="true" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+        <state relative-caret-position="44">
+          <caret line="121" column="27" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/MenuScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/LoadingScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/baylor/ecs/csi/Controllers/ConvertScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2336">
+          <caret line="218" column="17" lean-forward="true" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

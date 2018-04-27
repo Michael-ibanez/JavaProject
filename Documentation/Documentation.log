@@ -1,0 +1,614 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.15)  26 APR 2018 23:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Documentation.tex
+(./Documentation.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 22 language(s) loaded.
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xy.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xy.tex
+Bootstrap'ing: catcodes, docmode,
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen111
+\Y@c=\dimen112
+\U@c=\dimen113
+\D@c=\dimen114
+\L@c=\dimen115
+\R@c=\dimen116
+\Edge@c=\toks16
+\X@p=\dimen117
+\Y@p=\dimen118
+\U@p=\dimen119
+\D@p=\dimen120
+\L@p=\dimen121
+\R@p=\dimen122
+\Edge@p=\toks17
+\X@origin=\dimen123
+\Y@origin=\dimen124
+\X@xbase=\dimen125
+\Y@xbase=\dimen126
+\X@ybase=\dimen127
+\Y@ybase=\dimen128
+\X@min=\dimen129
+\Y@min=\dimen130
+\X@max=\dimen131
+\Y@max=\dimen132
+\lastobjectbox@=\box26
+\zerodotbox@=\box27
+\almostz@=\dimen133
+ direction,
+\d@X=\dimen134
+\d@Y=\dimen135
+\K@=\count90
+\KK@=\count91
+\Direction=\count92
+\K@dXdY=\dimen136
+\K@dYdX=\dimen137
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count93
+\quotPTK@=\dimen138
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks18
+\connectobjectbox@@=\box28
+ objects,
+\styletoks@=\toks19
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.8
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count94
+\crvpts@=\toks20
+\splinebox@=\box29
+\splineval@=\dimen139
+\splinedepth@=\dimen140
+\splinetol@=\dimen141
+\splinelength@=\dimen142
+ circles,
+\L@=\dimen143
+ loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.7
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen144
+ loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.8 loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.11 loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.14
+\Row=\count95
+\Col=\count96
+\queue@=\toks21
+\queue@@=\toks22
+\qcount@=\count97
+\qcount@@=\count98
+\matrixsize@=\count99
+ loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.11 loaded) loaded)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xypdf.tex
+ Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
+Xy-pic pdf driver: `curve' extension support
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
+Xy-pic pdf driver: `frame' extension support
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
+Xy-pic pdf driver: `line' extension support
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
+Xy-pic pdf driver: `rotate' extension support
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded)
+loaded)) (/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen145
+))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count100
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count101
+\leftroot@=\count102
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count103
+\DOTSCASE@=\count104
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip10
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
+\tag@help=\toks24
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
+\andhelp@=\toks25
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks26
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen154
+\captionmargin@=\dimen155
+\captionwidth=\dimen156
+\caption@tempdima=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
+)
+\c@ContinuedFloat=\count112
+)
+\c@subfigure=\count113
+\c@subtable=\count114
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count115
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language22
+LaTeX Info: Redefining \_ on input line 43.
+)
+(./Documentation.aux)
+\openout1 = `Documentation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 11.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=681.15898pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package xypdf Info: Line width: 0.47998pt on input line 11.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/local/texlive/2017basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen163
+\scratchbox=\box32
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen164
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)) (/usr/local/texlive/2017basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)) <GantDiagram.pdf, id=1, 794.97pt x 614.295pt>
+File: GantDiagram.pdf Graphic file (type pdf)
+ <use GantDiagram.pdf>
+Package pdftex.def Info: GantDiagram.pdf used on input line 56.
+(pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
+ [1
+
+{/usr/local/texlive/2017basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
+GantDiagram.pdf, page is rotated 90 degrees>] [2]
+Overfull \hbox (31.34048pt too wide) in paragraph at lines 119--120
+[]\OT1/cmr/m/n/12 Summary : The Client, af-ter go-ing past load-ingScreen-Con-t
+roller, will head to the menu(MenuScreenController)
+ []
+
+
+Overfull \hbox (3.2755pt too wide) in paragraph at lines 162--163
+[]\OT1/cmr/m/n/12 Summary : The Client, af-ter load-ing ap-pli-ca-tion, will he
+ad to the load-ing screen(loadingScreenController)
+ []
+
+[3] [4] <useCase.pdf, id=33, 597.45204pt x 845.1575pt>
+File: useCase.pdf Graphic file (type pdf)
+ <use useCase.pdf>
+Package pdftex.def Info: useCase.pdf used on input line 204.
+(pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
+
+[5 <./useCase.pdf>] [6] <domainModel.pdf, id=56, 597.45204pt x 845.1575pt>
+File: domainModel.pdf Graphic file (type pdf)
+
+<use domainModel.pdf>
+Package pdftex.def Info: domainModel.pdf used on input line 240.
+(pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
+ [7 <./domainModel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
+
+ []
+
+[8] [9] <dESIGNModel.pdf, id=99, 597.45204pt x 845.1575pt>
+File: dESIGNModel.pdf Graphic file (type pdf)
+
+<use dESIGNModel.pdf>
+Package pdftex.def Info: dESIGNModel.pdf used on input line 306.
+(pdftex.def)             Requested size: 477.96228pt x 676.12692pt.
+ [10 <./dESIGNModel.pdf>] [11]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./convertCurrency.pdf): PDF 
+inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<convertCurrency.pdf, id=140, 596.2275pt x 844.15375pt>
+File: convertCurrency.pdf Graphic file (type pdf)
+
+<use convertCurrency.pdf>
+Package pdftex.def Info: convertCurrency.pdf used on input line 330.
+(pdftex.def)             Requested size: 476.98265pt x 675.32391pt.
+ [12 <./convertCurrency.pdf>] [13]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./injectAction.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<injectAction.pdf, id=171, 596.2275pt x 844.15375pt>
+File: injectAction.pdf Graphic file (type pdf)
+ <use injectAction.pdf>
+Package pdftex.def Info: injectAction.pdf used on input line 335.
+(pdftex.def)             Requested size: 476.98265pt x 675.32391pt.
+
+[14 <./injectAction.pdf>] [15]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exitConverter.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<exitConverter.pdf, id=202, 596.2275pt x 844.15375pt>
+File: exitConverter.pdf Graphic file (type pdf)
+ <use exitConverter.pdf>
+Package pdftex.def Info: exitConverter.pdf used on input line 340.
+(pdftex.def)             Requested size: 476.98265pt x 675.32391pt.
+
+[16 <./exitConverter.pdf>]
+Overfull \hbox (7.28256pt too wide) in paragraph at lines 363--364
+[]| \OT1/cmr/m/n/12 This was used in the Screen-Con-trollers es-pe-cially for c
+on-vertScreen-Con-troller be-cause it sep-a-rates
+ []
+
+
+Overfull \hbox (49.45692pt too wide) in paragraph at lines 378--379
+[]\OT1/cmr/m/n/12 https://www.programcreek.com/java-api-examples/?class=javafx.
+stage.Stage&method=setOnCloseRequest 
+ []
+
+[17] (./Documentation.aux) ) 
+Here is how much of TeX's memory you used:
+ 6860 strings out of 494437
+ 97249 string characters out of 6166645
+ 199770 words of memory out of 5000000
+ 10088 multiletter control sequences out of 15000+600000
+ 9096 words of font info for 37 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 42i,5n,40p,3251b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb>
+Output written on Documentation.pdf (17 pages, 905878 bytes).
+PDF statistics:
+ 241 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+
