@@ -1,3 +1,9 @@
+/**
+ * Author             : Michael Ibanez
+ * Date last modified : 4/26/2018
+ * Date created       : 4/12/2018
+ */
+
 .root{
     -fx-background-image: url("bg.jpg");
     -fx-background-repeat: stretch;

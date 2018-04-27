@@ -1,6 +1,12 @@
-/*
-API from CurrencyLayer
+/**
+ * Author             : Michael Ibanez & CurrencyLayer
+ * Date last modified : 4/26/2018
+ * Date created       : 4/12/2018
+ *
+ * API from CurrencyLayer
+ *
  */
+
 package edu.baylor.ecs.csi.Controllers;
 
 import edu.baylor.ecs.csi.*;
@@ -14,7 +20,6 @@ import javafx.scene.control.ComboBox;
 import javafx.event.ActionEvent;
 import java.io.*;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 import java.text.DateFormat;
@@ -34,6 +39,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
+/**
+ * The type Convert screen controller.
+ */
 public class ConvertScreenController extends MainWindow implements Initializable{
 
     // essential URL structure is built using constants
@@ -66,27 +74,63 @@ public class ConvertScreenController extends MainWindow implements Initializable
                     "VEF", "VND", "VUV", "WST", "XAF", "XAG", "XAU", "XCD",
                     "XDR", "XOF", "XPF", "YER", "ZAR", "ZMK", "ZMW", "ZWL");
 
-
+    /**
+     * The ComboBox of string that we get option of currencies from.
+     */
     @FXML
     private ComboBox<String> mainListOfCurrenciesFrom;
+
+    /**
+     * The ComboBox of string that we get option of currencies from.
+     */
     @FXML
     private ComboBox<String> mainListOfCurrenciesTo;
+
+    /**
+     * The convert Button.
+     */
     @FXML
     private Button convertButton;
+
+    /**
+     * The back Button.
+     */
     @FXML
     private Button backButton;
+
+    /**
+     * The field to get amount of currency from.
+     */
     @FXML
     private TextField from;
+
+    /**
+     * The field we write our 1 to 1 conversion to.
+     */
     @FXML
     private TextField to;
+
+    /**
+     * The field we write our full conversion to
+     */
     @FXML
     private TextField resultField;
+
+    /**
+     * The credits hyperlink
+     */
     @FXML
     private Hyperlink credits;
 
-    // Initialization of window
+    /**
+     * Initialize
+     *    Sets dimension of application window
+     *
+     * @param l used from super
+     * @param r used from super
+     */
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    public void initialize(URL l, ResourceBundle r) {
         getWindow().setWidth(475);
         getWindow().setHeight(600);
 
@@ -97,7 +141,12 @@ public class ConvertScreenController extends MainWindow implements Initializable
         mainListOfCurrenciesTo.setItems(listOfCurrencies);
     }
 
-    // If convert button is pressed
+    /**
+     * Convert action.
+     *
+     * @param event the event
+     * @throws IOException the io exception
+     */
     public void convertAction(ActionEvent event) throws IOException {
         httpClient = HttpClients.createDefault();
         sendLiveRequest();
@@ -105,13 +154,22 @@ public class ConvertScreenController extends MainWindow implements Initializable
     }
 
 
-    // Credits button
+    /**
+     * Credits action.
+     *
+     * @param event the event
+     */
     public void creditsAction(ActionEvent event){
         System.out.println("Created by Michael Ibanez using javaFX");
     }
 
-    // Credits button writes to a new file
+    /**
+     * Credits action file.
+     *
+     * @throws IOException the io exception
+     */
     public void creditsActionFile() throws IOException {
+
         // Creating a File object that represents the disk file.
         File newFile = new File("creditsActionFile.txt");
         if(!newFile.exists()){
@@ -130,7 +188,12 @@ public class ConvertScreenController extends MainWindow implements Initializable
 
     }
 
-    // Back button
+    /**
+     * Back.
+     *
+     * @param event the event
+     * @throws IOException the io exception
+     */
     public void back(ActionEvent event) throws IOException {
         this.connectToMenu();
         setWindow((Stage)((Node)event.getSource()).getScene().getWindow());
@@ -138,6 +201,11 @@ public class ConvertScreenController extends MainWindow implements Initializable
         getWindow().show();
     }
 
+    /**
+     * sendLiveRequest.
+     *      What convertAction calls to get proper conversion from
+     * @throws IOException the io exception
+     */
     private void sendLiveRequest(){
 
         // The following line initializes the HttpGet Object with the URL in order to send a request
